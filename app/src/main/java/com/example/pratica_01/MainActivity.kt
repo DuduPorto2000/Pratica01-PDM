@@ -9,7 +9,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     private lateinit var telaMensagem: TextView
-    private lateinit var botaotTrocador: Button
+    private lateinit var botaoTrocador: Button
     private lateinit var tela: View
 
 
@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
 
         this.telaMensagem = findViewById (R.id.mensagem)
 
-        this.botaotTrocador = findViewById(R.id.botaoDeTroca)
+        this.botaoTrocador = findViewById(R.id.botaoDeTroca)
         this.tela = findViewById(R.id.view)
 
-        this.botaotTrocador.setOnClickListener{
+        this.botaoTrocador.setOnClickListener{
             this.telaMensagem.text = RGB().toString()
 
             this.tela.setBackgroundColor(RGB().toString().replace("[","").replace("]","").toInt())
